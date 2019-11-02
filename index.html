@@ -57,6 +57,10 @@
     </style>
 </head>
 <body>
+    <div style="text-align: center; padding: 80px 20px;">
+        <h3>jQuery MultiSelect Dropdown</h3>
+        <p><a href="http://www.thescriptkiddie.com">TheScriptKiddie</a></p>
+    </div>
     <div id="multi-select">
         <select>
             <option value="1">Option 1</option>
@@ -74,7 +78,7 @@
                 selectEl = wrap.children("select");
 
             var mainEl = $("<div></div>").addClass("multi-wrap"),
-                selectedEl = $("<div></div>").addClass("multi-selected"),
+                selectedEl = $("<div></div>").addClass("multi-selected").text("click here"),
                 listEl = $("<div></div>").addClass("multi-list").css("display","none");
 
             selectEl.find("option").each(function(){
